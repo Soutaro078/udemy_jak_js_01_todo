@@ -5,34 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO(JS)</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="to_do.js" defer></script>
 </head>
 <body>
 
     <div class="input-area">
         <input placeholder="TODOを入力" />
-        <button>追加</button>
+        <button id="add-button">追加</button>
     </div>
-    <div>
-        <p>未完了のTODO</p>
+    <div class="incomplete-area">
+        <p class="title">未完了のTODO</p>
         <ul>
             <li>
-                <div>
-                    <input type="checkbox" />
-                    <span>TODO</span>
+                <div class="list-row">
+                    <p class="todo-item">TODOです</p>
                     <button>完了</button>
                     <button>削除</button>
                 </div>
             </li>
         </ul>
     </div>
-    <div>
-        <p>完了のTODO</p>
+    <div class="complete-area">
+        <p class="title">完了のTODO</p>
         <ul>
             <li>
-                <div>
-                    <input type="checkbox" />
-                    <span>TODOでした</span>
+                <div class="list-row">
+                    <p class="todo-item">TODOでした</p>
                     <button>戻す</button>
                 </div>
             </li>
